@@ -34,15 +34,11 @@
     "enabled": true,
     "silent": true,
     "autoAlias": true,
-    "auto": true
+    "auto": true,
+    "productionBranch": "main"
   },
   "git": {
     "deploymentEnabled": true
   },
-  "alias": [
-    {
-      "domain": "dev.go-aei.com",
-      "branch": "dev"
-    }
-  ]
+  "alias": ["www.go-aei.com", "dev.go-aei.com"]
 } 
