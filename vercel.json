@@ -38,5 +38,11 @@
   },
   "git": {
     "deploymentEnabled": true
-  }
+  },
+  "alias": [
+    {
+      "domain": "dev.go-aei.com",
+      "branch": "dev"
+    }
+  ]
 } 
