@@ -19,7 +19,13 @@
   ],
   "redirects": [
     {
-      "source": "https://go-aei.com/:path*",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "go-aei.com"
+        }
+      ],
       "destination": "https://www.go-aei.com/:path*",
       "permanent": true
     }
