@@ -8,6 +8,13 @@
   ],
   "routes": [
     {
+      "src": "/(.*)",
+      "headers": {
+        "x-forwarded-host": "www.go-aei.com"
+      },
+      "continue": true
+    },
+    {
       "src": "/css/(.*)",
       "dest": "/css/$1"
     },
@@ -24,7 +31,22 @@
       "dest": "/$1"
     }
   ],
-  "env": {
-    "NODE_ENV": "production"
+  "redirects": [
+    {
+      "source": "https://go-aei.com/:path*",
+      "destination": "https://www.go-aei.com/:path*",
+      "permanent": true
+    }
+  ],
+  "github": {
+    "enabled": true,
+    "silent": true,
+    "autoAlias": true
+  },
+  "git": {
+    "deploymentEnabled": {
+      "main": true,
+      "dev": true
+    }
   }
 } 
