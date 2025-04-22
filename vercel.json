@@ -45,15 +45,6 @@
     "auto": true
   },
   "git": {
-    "deploymentEnabled": {
-      "main": {
-        "enabled": true,
-        "type": "production"
-      },
-      "dev": {
-        "enabled": true,
-        "type": "preview"
-      }
-    }
+    "deploymentEnabled": true
   }
 } 
