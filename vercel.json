@@ -41,12 +41,19 @@
   "github": {
     "enabled": true,
     "silent": true,
-    "autoAlias": true
+    "autoAlias": true,
+    "auto": true
   },
   "git": {
     "deploymentEnabled": {
-      "main": true,
-      "dev": true
+      "main": {
+        "enabled": true,
+        "type": "production"
+      },
+      "dev": {
+        "enabled": true,
+        "type": "preview"
+      }
     }
   }
 } 
